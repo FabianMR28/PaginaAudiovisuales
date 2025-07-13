@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CamPro - Pago Seguro</title>
+  <link rel="stylesheet" href="CSS/Principal.css" />
+  <style>
+    .payment-option {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .payment-option img {
+      height: 60px;
+      transition: transform 0.3s;
+    }
+
+    .payment-option img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .payment-instructions {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <a href="index.html" class="logo-center">
+      <img src="Imagenes/Banners/Logo final.png" width="140" alt="Logo CamPro">
+    </a>
+    <div class="header-right">
+      <a href="Login.html" class="login-btn">Iniciar Sesión</a>
+      <div class="cart-icon" id="cartIcon">
+        🛒 <span class="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Camaras.html">Cámaras</a></li>
+      <li><a href="Drones.html">Drones</a></li>
+      <li><a href="Accesorios.html">Accesorios</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido de Pago -->
+  <main style="max-width: 90%; margin: 0 auto; padding: 20px;">
+    <h1>Seleccione su método de pago</h1>
+    <div class="payment-instructions">
+      <p>Haz clic en la imagen para ser redirigido al sitio oficial de tu tarjeta:</p>
+    </div>
+
+    <div class="payment-option">
+      <a href="https://www.visa.com.pe/" target="_blank">
+        <img src="Imagenes/Formas de pago/visa.jpeg" alt="Visa">
+      </a>
+    </div>
+
+    <div class="payment-option">
+      <a href="https://www.mastercard.com.pe/" target="_blank">
+        <img src="Imagenes/Formas de pago/mastercard.png" alt="Mastercard">
+      </a>
+    </div>
+
+    <div class="payment-option">
+      <a href="https://www.dinersclub.com.pe/" target="_blank">
+        <img src="Imagenes/Formas de pago/diners.png" alt="Diners Club">
+      </a>
+    </div>
+
+    <div class="payment-option">
+      <a href="https://www.americanexpress.com/es-pe/" target="_blank">
+        <img src="Imagenes/Formas de pago/american.png" alt="American Express">
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">
+        <img src="Imagenes/Icons/IconoFacebook.png" width="140" alt="Facebook">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="Imagenes/Icons/IconoInstagram.png" width="140" alt="Instagram">
+      </a>
+      <a href="https://x.com" target="_blank">
+        <img src="Imagenes/Icons/IconoX.png" width="140" alt="X">
+      </a>
+      <a href="https://youtube.com" target="_blank">
+        <img src="Imagenes/Icons/IconoYoutube.png" width="140" alt="YouTube">
+      </a>
+    </div>
+
+    <div class="footer-sections">
+      <div class="footer-section">
+        <h3>Sobre Nosotros</h3>
+        <a href="Nosotros.html">Nosotros</a>
+        <a href="Formas de pago.html">Formas de pago</a>
+        <a href="Formas de envio.html">Formas de envío</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Atención al cliente</h3>
+        <a href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
+        <a href="SoporteTecnico.html">Soporte Técnico</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Políticas de la empresa</h3>
+        <a href="Politica de Garantia.html">Política de garantía</a>
+        <a href="Politica de Devolucion.html">Política de devolución o cambio</a>
+        <a href="Politica de Privacidad.html">Política de privacidad</a>
+        <a href="Terminos y Condiciones.html">Términos y condiciones</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Horario de atención</h3>
+        <div class="contact-info">
+          <p>Lunes a Viernes de 9:00 a.m. a 6:00 p.m.</p>
+          <p>Sábados y Domingos de 9:00 a.m. a 2:00 p.m.</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <p>© 2025 CamPro. Todos los derechos reservados.</p>
+      <p>Contacto: <a href="mailto:info@campro.com">info@campro.com</a> | Tel: +51 000 000 000</p>
+    </div>
+  </footer>
+
+</body>
+</html>
