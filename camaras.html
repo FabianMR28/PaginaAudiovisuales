@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamPro - Cámaras Profesionales</title>
+    <link href="CSS/Productos.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!-- Encabezado con logo y menú -->
+    <header>
+        <a href="index.html" class="logo-center">
+            <img src="Imagenes/Banners/Logo final.png" width="140" alt="Logo CamPro">
+        </a>
+        <div class="header-right">
+            <a href="login.html" class="login-btn">Iniciar Sesión</a>
+            <div class="cart-icon" id="cartIcon">
+                🛒 <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="camaras.html" class="active">Cámaras</a></li>
+            <li><a href="drones.html">Drones</a></li>
+            <li><a href="accesorios.html">Accesorios</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner de promoción animado -->
+    <div class="promo-banner">
+        <marquee behavior="scroll" direction="left">
+            📷 Oferta especial: Sony A7 IV con lente 24-70mm por solo S/. 2,999.99 (Ahorra S/. 500) 📷
+        </marquee>
+    </div>
+
+    <!-- Hero Banner específico para cámaras -->
+    <div class="hero-camaras">
+        <h2>Cámaras Profesionales</h2>
+        <p>Descubre nuestra selección de cámaras mirrorless, DSLR y cinematográficas para cada necesidad creativa</p>
+    </div>
+
+    <!-- Sección de categorías -->
+    <div class="categories">
+        <h3>Nuestras Cámaras</h3>
+    </div>
+
+    <!-- Barra de filtros -->
+    <div class="filter-bar">
+        <select id="marcaFiltro">
+            <option value="">Todas las marcas</option>
+            <option value="fujifilm">Fujifilm</option>
+            <option value="panasonic">Panasonic</option>
+            <option value="sony">Sony</option>
+            <option value="canon">Canon</option>
+            <option value="nikon">Nikon</option>
+        </select>
+
+        <select id="ordenFiltro">
+            <option value="">Ordenar por</option>
+            <option value="precio-asc">Precio: menor a mayor</option>
+            <option value="precio-desc">Precio: mayor a menor</option>
+        </select>
+
+        <input type="text" id="buscador" placeholder="Buscar accesorios...">
+    </div>
+
+
+    <!-- Productos destacados de cámaras -->
+    <div class="container">
+        <div class="product" data-marca="sony">
+            <img src="Imagenes/Productos/ImagenesCamaras/Sony A7 IV.jpg" alt="Sony A7 IV" />
+            <h3>Sony A7 IV</h3>
+            <ul class="specs">
+                <li>Sensor Full Frame 33MP</li>
+                <li>Grabación 4K 60fps</li>
+                <li>Pantalla táctil articulada</li>
+                <li>Estabilización 5 ejes</li>
+            </ul>
+            <p class="price">S/. 2499.99</p>
+            <p class="stock">Últimas 3 unidades</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+        <div class="product" data-marca="canon">
+            <img src="Imagenes/Productos/ImagenesCamaras/Canon EOS R5.jpg" alt="Canon EOS R5" />
+            <h3>Canon EOS R5</h3>
+            <ul class="specs">
+                <li>Sensor Full Frame 45MP</li>
+                <li>8K RAW interno</li>
+                <li>Estabilización 8 stops</li>
+                <li>Doble slot CFexpress</li>
+            </ul>
+            <p class="price">S/. 3899.99</p>
+            <p class="stock">Disponible</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+        <div class="product" data-marca="fujifilm">
+            <img src="Imagenes/Productos/ImagenesCamaras/Fujifilm X-T5.jpg" alt="Fujifilm X-T5" />
+            <h3>Fujifilm X-T5</h3>
+            <ul class="specs">
+                <li>Sensor APS-C 40MP</li>
+                <li>6K video 30fps</li>
+                <li>Filtros clásicos Fuji</li>
+                <li>Doble slot SD UHS-II</li>
+            </ul>
+            <p class="price">S/. 1499.99</p>
+            <p class="stock">Disponible</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+        <div class="product" data-marca="nikon">
+            <img src="Imagenes/Productos/ImagenesCamaras/Nikon Z8.jpg" alt="Nikon Z8" />
+            <h3>Nikon Z8</h3>
+            <ul class="specs">
+                <li>Sensor Full Frame 45MP</li>
+                <li>8K 60fps N-RAW</li>
+                <li>Autofoco sujetos 3D</li>
+                <li>Resistente a intemperie</li>
+            </ul>
+            <p class="price">S/. 3999.99</p>
+            <p class="stock out-of-stock">Agotado</p>
+            <button disabled>Agotado</button>
+        </div>
+
+        <div class="product" data-marca="panasonic">
+            <img src="Imagenes/Productos/ImagenesCamaras/Panasonic S5II.jpg" alt="Panasonic S5II" />
+            <h3>Panasonic S5II</h3>
+            <ul class="specs">
+                <li>Sensor Full Frame 24MP</li>
+                <li>6K open gate</li>
+                <li>Autofoco fase híbrido</li>
+                <li>Estabilización dual I.S.</li>
+            </ul>
+            <p class="price">S/. 1999.99</p>
+            <p class="stock">Disponible</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+        <div class="product" data-marca="sony">
+            <img src="Imagenes/Productos/ImagenesCamaras/Sony ZV-E1.jpeg" alt="Sony ZV-E1" />
+            <h3>Sony ZV-E1</h3>
+            <ul class="specs">
+                <li>Sensor Full Frame 12MP</li>
+                <li>4K 120fps sin crop</li>
+                <li>Enfoque automático AI</li>
+                <li>Diseño compacto</li>
+            </ul>
+            <p class="price">S/. 2199.99</p>
+            <p class="stock">Disponible</p>
+            <button>Agregar al carrito</button>
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="Imagenes/Icons/IconoFacebook.png" width="140" alt=""/>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="Imagenes/Icons/IconoInstagram.png" width="140" alt=""/>
+                </a>
+                <a href="https://x.com" target="_blank">
+                    <img src="Imagenes/Icons/IconoX.png" width="140" alt=""/>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="Imagenes/Icons/IconoYoutube.png" width="140" alt=""/>
+                </a>
+            </div>
+
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="formas de pago.html">Formas de pago</a>
+                    <a href="formas de envio.html">Formas de envío</a>
+                </div>  
+
+                <div class="footer-section">
+                    <h3>Atención al cliente</h3>
+                    <a href="preguntas frecuentes.html">Preguntas frecuentes</a>
+                    <a href="soporte tecnico.html">Soporte Técnico</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Políticas de la empresa</h3>
+                    <a href="politica de garantia.html">Política de garantía</a>
+                    <a href="Politica de Devolucion.html">Política de devolución o cambio</a>
+                    <a href="Politica de Privacidad.html">Política de privacidad</a>
+                    <a href="Terminos y Condiciones.html">Términos y condiciones</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Horario de atención</h3>
+                    <div class="contact-info">
+                        <p>Lunes a Viernes de 9:00 a.m. a 6:00 p.m.</p>
+                        <p>Sábados y Domingos de 9:00 a.m. a 2:00 p.m.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>© 2025 CamPro. Todos los derechos reservados.</p>
+                <p>Contacto: <a href="mailto:info@campro.com">info@campro.com</a> | Tel: +51 000 000 000</p>
+            </div>
+        </footer>
+
+    <script src="JS/Cart.js" type="text/javascript"></script>
+    <script src="JS/Filtros.js" type="text/javascript"></script>
+    
+</body>
+</html>

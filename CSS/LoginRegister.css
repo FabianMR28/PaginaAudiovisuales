@@ -1,0 +1,159 @@
+
+:root {
+  --primary: #2563eb;     /* Azul principal */
+  --primary-dark: #1e40af; /* Azul oscuro */
+  --accent: #f59e0b;      /* Dorado para botones */
+  --white: #ffffff;       /* Blanco */
+  --gray-light: #f3f4f6;  /* Fondo gris claro */
+  --text: #1f2937;        /* Texto oscuro */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--gray-light);
+  color: var(--text);
+}
+
+header {
+  background: var(--primary-dark);
+  color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+nav {
+  background: var(--primary);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer {
+  background: var(--primary-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-links {
+  margin: 1rem 0;
+}
+
+.footer-links a {
+  color: var(--white);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Contenedor de login y registro */
+.login-container,
+.register-container {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2,
+.register-container h2 {
+  color: var(--primary-dark);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.login-button,
+.register-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-button:hover,
+.register-button:hover {
+  background: var(--primary-dark);
+}
+
+.login-links,
+.login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.login-links a,
+.login-link a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.login-links a:hover,
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamPro - Accesorios Profesionales</title>
+    <link href="CSS/Productos.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!-- Encabezado con logo y menú -->
+    <header>
+        <a href="index.html" class="logo-center">
+            <img src="Imagenes/Banners/Logo final.png" width="140" alt="Logo CamPro">
+        </a>
+        <div class="header-right">
+            <a href="login.html" class="login-btn">Iniciar Sesión</a>
+            <div class="cart-icon" id="cartIcon">
+                🛒 <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="camaras.html">Cámaras</a></li>
+            <li><a href="drones.html">Drones</a></li>
+            <li><a href="accesorios.html" class="active">Accesorios</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner de promoción animado -->
+    <div class="promo-banner">
+        <marquee behavior="scroll" direction="left">
+            🎬 Oferta especial: Kit completo de iluminación LED + pantalla verde por solo S/. 499.99 (Ahorra S/. 150) 🎬
+        </marquee>
+    </div>
+
+    <!-- Hero Banner específico para accesorios -->
+    <div class="hero-accesorios">
+        <h2>Accesorios Profesionales</h2>
+        <p>Todo lo que necesitas para completar tu equipo audiovisual: trípodes, iluminación, soportes y más</p>
+    </div>
+
+    <!-- Sección de categorías -->
+    <div class="categories">
+        <h3>Nuestros Accesorios</h3>
+    </div>
+
+    <!-- Barra de filtros -->
+    <div class="filter-bar">
+        <select id="marcaFiltro">
+            <option value="">Todas las categorías</option>
+            <option value="tripodes">Trípodes y soportes</option>
+            <option value="iluminacion">Iluminación</option>
+            <option value="audio">Audio</option>
+            <option value="fondos">Fondos y pantallas</option>
+            <option value="repuestos">Repuestos</option>
+        </select>
+
+        <select id="ordenFiltro">
+            <option value="">Ordenar por</option>
+            <option value="precio-asc">Precio: menor a mayor</option>
+            <option value="precio-desc">Precio: mayor a menor</option>
+            <option value="popularidad">Popularidad</option>
+            <option value="novedades">Novedades</option>
+        </select>
+
+        <input type="text" id="buscador" placeholder="Buscar accesorios...">
+    </div>
+
+    <!-- Productos destacados de accesorios -->
+    <div class="container">
+        <div class="product" data-marca="tripodes">
+            <img src="Imagenes/Productos/ImagenesAccesorios/Trípode Manfrotto.webp" alt="Trípode Manfrotto"/>
+            <h3>Trípode Manfrotto MT190XPRO4</h3>
+            <ul class="specs">
+                <li>Carga máxima: 8 kg</li>
+                <li>Altura máxima: 166 cm</li>
+                <li>Peso: 2.3 kg</li>
+                <li>Incluye cabeza hidráulica</li>
+            </ul>
+            <p class="price">S/. 299.99</p>
+            <p class="stock">Disponible</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+        <div class="product" data-marca="fondos">
+            <img src="Imagenes/Productos/ImagenesAccesorios/Pantalla verde.jpg" alt="Pantalla verde"/>
+            <h3>Kit Pantalla Verde 3x4m</h3>
+            <ul class="specs">
+                <li>Tamaño: 3x4 metros</li>
+                <li>Material: poliéster sin arrugas</li>
+                <li>Incluye estructura metálica</li>
+                <li>Fácil montaje y transporte</li>
+            </ul>
+            <p class="price">S/. 199.99</p>
+            <p class="stock">Últimas 5 unidades</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+        <div class="product" data-marca="iluminacion">
+            <img src="Imagenes/Productos/ImagenesAccesorios/KitIluminacionLED.webp" alt="Kit iluminación LED"/>
+            <h3>Kit Iluminación LED Neewer 660</h3>
+            <ul class="specs">
+                <li>2 paneles LED bi-color 660</li>
+                <li>Temperatura: 3200K-5600K</li>
+                <li>Incluye difusores y soportes</li>
+                <li>Control inalámbrico incluido</li>
+            </ul>
+            <p class="price">S/. 399.99</p>
+            <p class="stock">Disponible</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+        <div class="product" data-marca="audio">
+            <img src="Imagenes/Productos/ImagenesAccesorios/Micrófono Rode.webp" alt="Micrófono Rode"/>
+            <h3>Micrófono Rode VideoMic NTG</h3>
+            <ul class="specs">
+                <li>Micrófono de escopeta</li>
+                <li>Patrón supercardioide</li>
+                <li>Alimentación por batería o USB-C</li>
+                <li>Incluye shock mount y filtros</li>
+            </ul>
+            <p class="price">S/. 249.99</p>
+            <p class="stock">Disponible</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+        <div class="product" data-marca="repuestos">
+            <img src="Imagenes/Productos/ImagenesAccesorios/Baterías Sony.jpg" alt="Baterías Sony"/>
+            <h3>Pack 2 Baterías Sony NP-FZ100</h3>
+            <ul class="specs">
+                <li>Compatibilidad: Sony Alpha</li>
+                <li>Capacidad: 2280mAh</li>
+                <li>Incluye cargador dual</li>
+                <li>Garantía 12 meses</li>
+            </ul>
+            <p class="price">S/. 129.99</p>
+            <p class="stock">Disponible</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+        <div class="product" data-marca="tripodes">
+            <img src="Imagenes/Productos/ImagenesAccesorios/Gimbal DJI.webp" alt="Gimbal DJI"/>
+            <h3>Gimbal DJI RS 3 Mini</h3>
+            <ul class="specs">
+                <li>Carga máxima: 2 kg</li>
+                <li>Peso: 795g</li>
+                <li>Tiempo de batería: 10h</li>
+                <li>Modo retrato y paisaje</li>
+            </ul>
+            <p class="price">S/. 349.99</p>
+            <p class="stock out-of-stock">Agotado</p>
+            <button disabled>Agotado</button>
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="Imagenes/Icons/IconoFacebook.png" width="140" alt=""/>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="Imagenes/Icons/IconoInstagram.png" width="140" alt=""/>
+                </a>
+                <a href="https://x.com" target="_blank">
+                    <img src="Imagenes/Icons/IconoX.png" width="140" alt=""/>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="Imagenes/Icons/IconoYoutube.png" width="140" alt=""/>
+                </a>
+            </div>
+
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="formas de pago.html">Formas de pago</a>
+                    <a href="formas de envio.html">Formas de envío</a>
+                </div>  
+
+                <div class="footer-section">
+                    <h3>Atención al cliente</h3>
+                    <a href="preguntas frecuentes.html">Preguntas frecuentes</a>
+                    <a href="soporte tecnico.html">Soporte Técnico</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Políticas de la empresa</h3>
+                    <a href="politica de garantia.html">Política de garantía</a>
+                    <a href="Politica de Devolucion.html">Política de devolución o cambio</a>
+                    <a href="Politica de Privacidad.html">Política de privacidad</a>
+                    <a href="Terminos y Condiciones.html">Términos y condiciones</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Horario de atención</h3>
+                    <div class="contact-info">
+                        <p>Lunes a Viernes de 9:00 a.m. a 6:00 p.m.</p>
+                        <p>Sábados y Domingos de 9:00 a.m. a 2:00 p.m.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>© 2025 CamPro. Todos los derechos reservados.</p>
+                <p>Contacto: <a href="mailto:info@campro.com">info@campro.com</a> | Tel: +51 000 000 000</p>
+            </div>
+        </footer>
+
+    <script src="JS/Cart.js" type="text/javascript"></script>
+    <script src="JS/Filtros.js" type="text/javascript"></script>
+    
+</body>
+</html>
