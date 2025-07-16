@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("usuariosCamPro", JSON.stringify(users));
 
       alert("Registro exitoso. Ahora puedes iniciar sesión.");
-      window.location.href = "Login.html";
+      window.location.href = "login.html";
 
     } else if (isLoginPage) {
       const users = JSON.parse(localStorage.getItem("usuariosCamPro") || "[]");
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (user) {
         localStorage.setItem("usuarioActivo", JSON.stringify(user));
         alert(`Bienvenido, ${user.nombres}`);
-        window.location.href = "Principal.html";
+        window.location.href = "index.html";
       } else {
         alert("Correo o contraseña incorrectos.");
       }
